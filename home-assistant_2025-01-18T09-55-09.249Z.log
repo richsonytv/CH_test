@@ -1,0 +1,224 @@
+2025-01-18 11:50:43.940 ERROR (Recorder) [homeassistant] Error doing job: Task exception was never retrieved (None)
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/helpers/entity_platform.py", line 1055, in _async_update_entity_states
+    await entity.async_update_ha_state(True)
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 978, in async_update_ha_state
+    self._async_write_ha_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1148, in _async_write_ha_state
+    self.__async_calculate_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1087, in __async_calculate_state
+    if state_attributes := self.state_attributes:
+                           ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/src/homeassistant/homeassistant/components/climate/__init__.py", line 442, in state_attributes
+    data[ATTR_FAN_MODE] = self.fan_mode
+                          ^^^^^^^^^^^^^
+  File "/config/custom_components/homeeasy_local/climate.py", line 231, in fan_mode
+    return list(SUPPORT_FAN.keys())[mode]
+           ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+IndexError: list index out of range
+2025-01-18 11:51:35.596 ERROR (MainThread) [custom_components.homeeasy_local] Unexpected exception from <bound method DataUpdateCoordinator.async_refresh of <custom_components.homeeasy_local.coordinator.UpdateCoordinator object at 0x7f07999b5a90>>
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/helpers/debounce.py", line 137, in _handle_timer_finish
+    await task
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 355, in async_refresh
+    await self._async_refresh(log_failures=True)
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 478, in _async_refresh
+    self.async_update_listeners()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 177, in async_update_listeners
+    update_callback()
+    ~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 558, in _handle_coordinator_update
+    self.async_write_ha_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1023, in async_write_ha_state
+    self._async_write_ha_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1148, in _async_write_ha_state
+    self.__async_calculate_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1087, in __async_calculate_state
+    if state_attributes := self.state_attributes:
+                           ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/src/homeassistant/homeassistant/components/climate/__init__.py", line 442, in state_attributes
+    data[ATTR_FAN_MODE] = self.fan_mode
+                          ^^^^^^^^^^^^^
+  File "/config/custom_components/homeeasy_local/climate.py", line 231, in fan_mode
+    return list(SUPPORT_FAN.keys())[mode]
+           ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+IndexError: list index out of range
+2025-01-18 11:51:37.460 ERROR (MainThread) [homeassistant] Error doing job: Task exception was never retrieved (None)
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/helpers/entity_platform.py", line 1055, in _async_update_entity_states
+    await entity.async_update_ha_state(True)
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 978, in async_update_ha_state
+    self._async_write_ha_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1148, in _async_write_ha_state
+    self.__async_calculate_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1087, in __async_calculate_state
+    if state_attributes := self.state_attributes:
+                           ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/src/homeassistant/homeassistant/components/climate/__init__.py", line 442, in state_attributes
+    data[ATTR_FAN_MODE] = self.fan_mode
+                          ^^^^^^^^^^^^^
+  File "/config/custom_components/homeeasy_local/climate.py", line 231, in fan_mode
+    return list(SUPPORT_FAN.keys())[mode]
+           ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+IndexError: list index out of range
+2025-01-18 11:52:35.600 ERROR (MainThread) [custom_components.homeeasy_local] Unexpected exception from <bound method DataUpdateCoordinator.async_refresh of <custom_components.homeeasy_local.coordinator.UpdateCoordinator object at 0x7f07999b5a90>>
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/helpers/debounce.py", line 137, in _handle_timer_finish
+    await task
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 355, in async_refresh
+    await self._async_refresh(log_failures=True)
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 478, in _async_refresh
+    self.async_update_listeners()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 177, in async_update_listeners
+    update_callback()
+    ~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 558, in _handle_coordinator_update
+    self.async_write_ha_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1023, in async_write_ha_state
+    self._async_write_ha_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1148, in _async_write_ha_state
+    self.__async_calculate_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1087, in __async_calculate_state
+    if state_attributes := self.state_attributes:
+                           ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/src/homeassistant/homeassistant/components/climate/__init__.py", line 442, in state_attributes
+    data[ATTR_FAN_MODE] = self.fan_mode
+                          ^^^^^^^^^^^^^
+  File "/config/custom_components/homeeasy_local/climate.py", line 231, in fan_mode
+    return list(SUPPORT_FAN.keys())[mode]
+           ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+IndexError: list index out of range
+2025-01-18 11:52:43.957 ERROR (Recorder) [homeassistant] Error doing job: Task exception was never retrieved (None)
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/helpers/entity_platform.py", line 1055, in _async_update_entity_states
+    await entity.async_update_ha_state(True)
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 978, in async_update_ha_state
+    self._async_write_ha_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1148, in _async_write_ha_state
+    self.__async_calculate_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1087, in __async_calculate_state
+    if state_attributes := self.state_attributes:
+                           ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/src/homeassistant/homeassistant/components/climate/__init__.py", line 442, in state_attributes
+    data[ATTR_FAN_MODE] = self.fan_mode
+                          ^^^^^^^^^^^^^
+  File "/config/custom_components/homeeasy_local/climate.py", line 231, in fan_mode
+    return list(SUPPORT_FAN.keys())[mode]
+           ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+IndexError: list index out of range
+2025-01-18 11:53:35.606 ERROR (MainThread) [custom_components.homeeasy_local] Unexpected exception from <bound method DataUpdateCoordinator.async_refresh of <custom_components.homeeasy_local.coordinator.UpdateCoordinator object at 0x7f07999b5a90>>
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/helpers/debounce.py", line 137, in _handle_timer_finish
+    await task
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 355, in async_refresh
+    await self._async_refresh(log_failures=True)
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 478, in _async_refresh
+    self.async_update_listeners()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 177, in async_update_listeners
+    update_callback()
+    ~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 558, in _handle_coordinator_update
+    self.async_write_ha_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1023, in async_write_ha_state
+    self._async_write_ha_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1148, in _async_write_ha_state
+    self.__async_calculate_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1087, in __async_calculate_state
+    if state_attributes := self.state_attributes:
+                           ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/src/homeassistant/homeassistant/components/climate/__init__.py", line 442, in state_attributes
+    data[ATTR_FAN_MODE] = self.fan_mode
+                          ^^^^^^^^^^^^^
+  File "/config/custom_components/homeeasy_local/climate.py", line 231, in fan_mode
+    return list(SUPPORT_FAN.keys())[mode]
+           ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+IndexError: list index out of range
+2025-01-18 11:53:38.246 ERROR (MainThread) [homeassistant] Error doing job: Task exception was never retrieved (None)
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/helpers/entity_platform.py", line 1055, in _async_update_entity_states
+    await entity.async_update_ha_state(True)
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 978, in async_update_ha_state
+    self._async_write_ha_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1148, in _async_write_ha_state
+    self.__async_calculate_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1087, in __async_calculate_state
+    if state_attributes := self.state_attributes:
+                           ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/src/homeassistant/homeassistant/components/climate/__init__.py", line 442, in state_attributes
+    data[ATTR_FAN_MODE] = self.fan_mode
+                          ^^^^^^^^^^^^^
+  File "/config/custom_components/homeeasy_local/climate.py", line 231, in fan_mode
+    return list(SUPPORT_FAN.keys())[mode]
+           ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+IndexError: list index out of range
+2025-01-18 11:54:35.611 ERROR (MainThread) [custom_components.homeeasy_local] Unexpected exception from <bound method DataUpdateCoordinator.async_refresh of <custom_components.homeeasy_local.coordinator.UpdateCoordinator object at 0x7f07999b5a90>>
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/helpers/debounce.py", line 137, in _handle_timer_finish
+    await task
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 355, in async_refresh
+    await self._async_refresh(log_failures=True)
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 478, in _async_refresh
+    self.async_update_listeners()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 177, in async_update_listeners
+    update_callback()
+    ~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 558, in _handle_coordinator_update
+    self.async_write_ha_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1023, in async_write_ha_state
+    self._async_write_ha_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1148, in _async_write_ha_state
+    self.__async_calculate_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1087, in __async_calculate_state
+    if state_attributes := self.state_attributes:
+                           ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/src/homeassistant/homeassistant/components/climate/__init__.py", line 442, in state_attributes
+    data[ATTR_FAN_MODE] = self.fan_mode
+                          ^^^^^^^^^^^^^
+  File "/config/custom_components/homeeasy_local/climate.py", line 231, in fan_mode
+    return list(SUPPORT_FAN.keys())[mode]
+           ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+IndexError: list index out of range
+2025-01-18 11:54:47.314 ERROR (DbWorker_0) [homeassistant] Error doing job: Task exception was never retrieved (None)
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/helpers/entity_platform.py", line 1055, in _async_update_entity_states
+    await entity.async_update_ha_state(True)
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 978, in async_update_ha_state
+    self._async_write_ha_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1148, in _async_write_ha_state
+    self.__async_calculate_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1087, in __async_calculate_state
+    if state_attributes := self.state_attributes:
+                           ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/src/homeassistant/homeassistant/components/climate/__init__.py", line 442, in state_attributes
+    data[ATTR_FAN_MODE] = self.fan_mode
+                          ^^^^^^^^^^^^^
+  File "/config/custom_components/homeeasy_local/climate.py", line 231, in fan_mode
+    return list(SUPPORT_FAN.keys())[mode]
+           ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+IndexError: list index out of range
