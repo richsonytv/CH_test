@@ -1,0 +1,70 @@
+2025-01-23 08:32:54.391 DEBUG (MainThread) [custom_components.homeeasy_local] Finished fetching homeeasy_local data in 0.000 seconds (success: True)
+2025-01-23 08:32:55.026 DEBUG (MainThread) [custom_components.homeeasy_local] Manually updated homeeasy_local data
+2025-01-23 08:32:59.388 DEBUG (MainThread) [custom_components.homeeasy_local] Finished fetching homeeasy_local data in 0.001 seconds (success: True)
+2025-01-23 08:33:00.125 DEBUG (MainThread) [custom_components.homeeasy_local] Manually updated homeeasy_local data
+2025-01-23 08:33:04.650 DEBUG (MainThread) [custom_components.homeeasy_local] Finished fetching homeeasy_local data in 0.000 seconds (success: True)
+2025-01-23 08:33:05.436 DEBUG (MainThread) [custom_components.homeeasy_local] Manually updated homeeasy_local data
+2025-01-23 08:33:08.154 DEBUG (MainThread) [custom_components.homeeasy_local] Finished fetching homeeasy_local data in 0.000 seconds (success: True)
+2025-01-23 08:33:08.957 DEBUG (MainThread) [custom_components.homeeasy_local] Manually updated homeeasy_local data
+2025-01-23 08:36:33.778 ERROR (MainThread) [homeassistant.components.select] Error adding entity select.homeeasy_local_192_168_1_126_select_horizontal for domain select with platform homeeasy_local
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/helpers/entity_platform.py", line 608, in _async_add_entities
+    await coro
+  File "/usr/src/homeassistant/homeassistant/helpers/entity_platform.py", line 927, in _async_add_entity
+    await entity.add_to_platform_finish()
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1384, in add_to_platform_finish
+    self.async_write_ha_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1023, in async_write_ha_state
+    self._async_write_ha_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1148, in _async_write_ha_state
+    self.__async_calculate_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1085, in __async_calculate_state
+    state = self._stringify_state(available)
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1029, in _stringify_state
+    if (state := self.state) is None:
+                 ^^^^^^^^^^
+  File "/usr/src/homeassistant/homeassistant/components/select/__init__.py", line 145, in state
+    current_option = self.current_option
+                     ^^^^^^^^^^^^^^^^^^^
+  File "/config/custom_components/homeeasy_local/select.py", line 97, in current_option
+    if self.coordinator.state.flowHorizontalMode == value:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'flowHorizontalMode'
+2025-01-23 08:36:33.793 ERROR (MainThread) [homeassistant.components.select] Error adding entity select.homeeasy_local_192_168_1_126_select_vertical for domain select with platform homeeasy_local
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/helpers/entity_platform.py", line 608, in _async_add_entities
+    await coro
+  File "/usr/src/homeassistant/homeassistant/helpers/entity_platform.py", line 927, in _async_add_entity
+    await entity.add_to_platform_finish()
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1384, in add_to_platform_finish
+    self.async_write_ha_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1023, in async_write_ha_state
+    self._async_write_ha_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1148, in _async_write_ha_state
+    self.__async_calculate_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1085, in __async_calculate_state
+    state = self._stringify_state(available)
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1029, in _stringify_state
+    if (state := self.state) is None:
+                 ^^^^^^^^^^
+  File "/usr/src/homeassistant/homeassistant/components/select/__init__.py", line 145, in state
+    current_option = self.current_option
+                     ^^^^^^^^^^^^^^^^^^^
+  File "/config/custom_components/homeeasy_local/select.py", line 66, in current_option
+    if self.coordinator.state.flowVerticalMode == value:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'flowVerticalMode'
+2025-01-23 08:36:53.314 DEBUG (MainThread) [custom_components.homeeasy_local] Finished fetching homeeasy_local data in 0.000 seconds (success: True)
+2025-01-23 08:36:53.812 DEBUG (MainThread) [custom_components.homeeasy_local] Manually updated homeeasy_local data
+2025-01-23 08:36:55.011 DEBUG (MainThread) [custom_components.homeeasy_local] Finished fetching homeeasy_local data in 0.000 seconds (success: True)
+2025-01-23 08:36:55.702 DEBUG (MainThread) [custom_components.homeeasy_local] Manually updated homeeasy_local data
+2025-01-23 08:36:59.817 DEBUG (MainThread) [custom_components.homeeasy_local] Finished fetching homeeasy_local data in 0.001 seconds (success: True)
+2025-01-23 08:37:00.594 DEBUG (MainThread) [custom_components.homeeasy_local] Manually updated homeeasy_local data
+2025-01-23 08:37:02.101 DEBUG (MainThread) [custom_components.homeeasy_local] Finished fetching homeeasy_local data in 0.000 seconds (success: True)
+2025-01-23 08:37:02.844 DEBUG (MainThread) [custom_components.homeeasy_local] Manually updated homeeasy_local data
